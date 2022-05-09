@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-----------------------------Google font---------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <!-----------------------------bootstrap------------------------------>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <!------------------------------font-awesome--------------------------->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>index</title>
+    <style>
+        /*------------Header Section-------------*/
+        .content-header{
+            background-image: url("img/bgIndex.jpg");
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            overflow: hidden;
+        }
+        /*-------------Head Line-----------------*/
+        .headLine{
+            text-align: center;
+            font-family: 'Courgette', cursive;
+            color: #fff;
+            
+        }
+        .headLine h1{
+            font-size: 48px;
+            font-weight: bold; 
+        }
+        /*-------------Search bar----------------*/
+        .search-bar{
+            height: 90px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+        }
+        .search-bar .for-search .input-area{
+            width: 320px;
+           /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);*/
+            border-radius: 20px;
+            font-size: 22px;
+            padding-left: 10px;
+            border: 1px solid #f8fcff33;
+            background: #ffffff4f;
+            font-family: 'Courgette', cursive;
+            /*letter-spacing: 1px;*/
+            color: #fff;
+        }
+        .search-bar .for-search i{
+            margin-left: -60px;
+            background-color: #d4cfd9;
+            color: #818770;
+            width: 60px;
+            font-size: 25px;
+            text-align: center;
+            border-radius: 20px;
+            padding: 4px 0px;
+            padding-bottom: 7px;
+            
+        }
+
+        /*----------Animation hr-------------*/
+        .animation-hr{
+            width: 400px;
+            margin: 0px auto;
+        }
+		.hr1{
+			animation: hr1 2s ease infinite;
+		}
+		@keyframes hr1 {
+			 0% {
+			   width: 15%;
+			 }
+			 50% {
+			   width: 100%;
+			 }
+			 100% {
+			   width: 15%;
+			 }
+
+		}
+
+		.hr2{
+			animation: hr2 2s ease infinite;
+		}
+		@keyframes hr2 {
+			 0% {
+			   width: 100%;
+			 }
+			 50% {
+			   width: 15%;
+			 }
+			 100% {
+			   width: 100%;
+			 }
+
+		}
+		.hr3{
+			margin-left: auto;
+			animation: hr3 2s ease infinite;
+		}
+		@keyframes hr3 {
+			0% {
+			   width: 100%;
+			 }
+			 50% {
+			   width: 15%;
+			 }
+			 100% {
+			   width: 100%;
+			 }
+
+		}
+		.hr4{
+			margin-left:  auto;
+			animation: hr4 2s ease infinite;
+		}
+		@keyframes hr4 {
+			 0% {
+			   width: 15%;
+			 }
+			 50% {
+			   width: 100%;
+			 }
+			 100% {
+			   width: 15%;
+			 }
+
+		}
+    .animation-hr hr{
+  		height: 3px;
+  		border-radius: 5px;
+      background-image: linear-gradient(to right top,#eaf2df, #d4cfd9, #b0a47f, #a8a284, #c1ff01);
+      opacity: 100;
+      margin-bottom: 3px;
+      margin-top: 6px;
+    }
+    .Digital-clock{
+    width: 250px;
+    padding: 4px 40px;
+     margin: 0px auto;
+     opacity: 100;
+     font-family: 'Courgette', cursive;
+     background-image: linear-gradient(to right top,#58871961, #0dcaf04d, #e5f0d98c, #a8a284a6, #c1ff0161);
+     border-radius: 20px;
+     padding-top: 9px;
+     animation: clock 2s ease infinite;
+    }
+    @keyframes clock {
+			 0% {
+			   transform: scale(1.0);
+			 }
+			 50% {
+			   transform: scale(1.3);
+			 }
+			 100% {
+			   transform: scale(1.0);
+			 }
+
+		}
+ 
+    .display{
+      display: flex;
+      color: rgb(0, 0, 0);
+
+    }
+    .display h1{
+      font-size: 40px;
+    }
+    .display b{
+      margin-top: 15px;
+    }
+    @media only screen and (max-width: 460px) {
+      .headLine h1{
+        transform: scale(1.1);
+        
+      }
+      .animation-hr{
+        width: 380px;
+
+      }
+      .animation-hr hr{
+        margin-bottom: 7px;
+        padding: 2px;
+      }
+      .search-bar .for-search{
+        transform: scale(1.4);
+        margin-top: 50px;
+        margin-bottom: 60px;
+      }
+      .search-bar .for-search .input-area{
+        width: 230px;
+      }
+      .search-bar .for-search i{
+        width: 45px;
+        margin-left: -43px;
+      }
+
+    }
+
+
+    /*---------------------card Section-----------------*/
+    .main{
+      height: 140vh;
+      overflow: hidden;
+      background: linear-gradient(0deg, #000000, #012836, #001b22);
+      width: 100%;
+     
+    }
+    .main-card{
+      width: 900px;
+      margin: 30px auto;
+    }
+    .card{
+      width: 240px;
+      height: 380px;
+      border-radius: 20px;
+      text-align: center;
+      margin: 20px;
+      background-color: #012c3a8e;
+      color: #fff;
+      filter: blur(0);
+      overflow: hidden;
+      z-index: 10;
+      backdrop-filter: blur(1px);
+      border: 1px solid #023e5283;
+      box-shadow: 5px 5px 30px rgb(0,0,0,0,0.2);
+      display: inline-block;
+      animation: card 4s ease infinite;
+}
+@keyframes card {
+  0%{
+    transform: scale(1.1);
+  }
+  50%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(1.1);
+  }
+  
+}
+    
+    .card img{
+      width: 100%;
+      margin: 0px auto;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-radius: 10px;
+    }
+    .card h3{
+      font-family: 'Courgette', cursive;
+      font-weight: bold;
+      font-size: 23px;
+      text-align: center;
+      margin: 5px 0 0 0;
+    }
+    .card p{
+      font-size: small;
+      font-family: 'Courgette', cursive;
+      text-align: center;
+      padding: 0px 15px;
+      margin-bottom: 3px;
+    }
+    .card a{
+      font: small;
+      font-family: 'Courgette', cursive;
+      text-align: center;
+      text-decoration: none;
+      margin-top: -16px;
+      color: #69b3d194;
+    }
+    @media only screen and (max-width: 460px) {
+      .main{
+        height: 350vh;
+      }
+      .main-card{
+        width: 100%;
+      }
+      .card{
+        display: block;
+        margin: 43px auto;
+      }
+
+    }
+    </style>
+    <link rel="stylesheet" href="src/style1.css">
+</head>
+<body>
+    
+    <header>
+      <div class="content-header">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+        <div id='title'></div>
+            <!---------Head-Line--------->
+                <div class="headLine pt-5 mp-sm-3 mt-5 mt-md-3">
+                    <h1 class="pt-5 pt-sm-3 mt-sm-5">difference calculator</h1>
+                    <h1>for <span class="animation"></span></h1>
+                </div>
+            <!---------Search bar--------->
+            <div class="search-bar">
+                <div class="for-search">
+                    <input class="input-area" placeholder="Search..." type="search" name="search" id="search">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+
+            <!--------Animation hr--------->
+            <div class="animation-hr">
+                <hr class="hr1">
+                <hr class="hr2">
+                <hr class="hr3">
+                <hr class="hr4">              
+            </div>
+        
+            <!--------------------Clock------------------->
+            <div class="Digital-clock mt-5">
+              <div id="clock" class="drak">
+                <div class="display">
+                    <h1 id="time"></h1>
+                    <b><small></small></b>
+                </div>
+              </div>
+            </div>
+
+      </div>
+    </header>
+
+    <!-----------------------Card Section-------------------------->
+    <section>
+
+      <div class="main">
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <div id='stars3'></div>
+      <div id='title'></div>
+
+      <div class="main-card">
+
+      
+        <div class="card">
+          <img class="" src="img/nsystem.jpg" alt="">
+          <h3>Numbring System</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <a href="public/numbering system.html" class="stretched-link">visite there</a>
+        </div>
+
+        <div class="card">
+          <img class="" src="img/waite.jpg" alt="">
+          <h3>Time changer</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <a href="public/Time.html" class="stretched-link">visite there</a>
+        </div>
+
+        <div class="card">
+          <img class="" src="img/w.jpg" alt="">
+          <h3>Weight changer</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <a href="public/Weight.html" class="stretched-link">visite there</a>
+        </div>
+
+        <div class="card">
+          <img class="" src="img/t.jpg" alt="">
+          <h3>Temperature</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <a href="public/Temperature.html" class="stretched-link">visite there</a>
+        </div>
+
+        <div class="card">
+          <img class="" src="img/dd.jpg" alt="">
+          <h3>distance converter</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <a href="public/Distance.html" class="stretched-link">visite there</a>
+        </div>
+
+        <div class="card">
+          <img class="" src="img/abme.jpg" alt="">
+          <h3>About Me</h3>
+          <p>Tariq Monowar Hossain.polytechnic in computer science(4th)</p>
+          <a href="#" class="stretched-link">visite there</a>
+        </div>
+
+      </div>
+      </div>
+    </section>
+
+  
+
+  <script src="src/typed.js"></script>
+    <script src="src/index.js"> </script>
+    <script src="src/sequeroty.js"></script>
+  
+    
+
+
+    <!-----------------------------bootstrap js--------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
